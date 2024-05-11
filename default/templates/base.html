@@ -59,9 +59,9 @@
                	<a href="#nav" title="Show navigation">Show navigation</a>
 	            <a href="#" title="Hide navigation">Hide navigation</a>
 	            <ul class="clearfix">
-	           	<li class="active"><a href="/" title="">Главная</a></li>
-                <li><a href="about-us.htm" title="">О нас</a></li>                
-                <li><a href="gallery.htm" title="">Галерея</a></li>
+	           	<li class="{% if request.path == '/' %} active {% endif %}"><a href="/" title="">Главная</a></li>
+                <li class="{% if  request.path ==  '/about-us' %} active {% endif %}"><a href="/about-us" title="">О нас</a></li>                
+                <li class="{% if  request.path ==  '/gallery' %} active {% endif %}"><a href="/gallery" title="">Галерея</a></li>
                 <!--<li><a href="services.htm" title="">Services</a></li>
                 <li><a href="components.htm" title=""><span>Features</span></a>-->
   			      <ul> <!-- Submenu -->
