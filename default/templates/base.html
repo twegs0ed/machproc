@@ -3,21 +3,30 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="not-ie" lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="not-ie" lang="en"> <!--<![endif]-->
+
 <head>
-	<!-- Basic Meta Tags -->
+  <!-- Basic Meta Tags -->
   <meta charset="utf-8">
   <title>{{title}}</title>
-	<meta name="description" content="Предприятие, занимающееся механической обработкой деталей. Токарные, фрезерные работы.">
-	<meta name="keywords" content="токарка, фрезерка, точение, фрезерование, мехобработка, детали, заготовки">
+  <meta name="description"
+    content="Предприятие, занимающееся механической обработкой деталей. Токарные, фрезерные работы.">
+  <meta name="keywords" content="токарка, фрезерка, точение, фрезерование, мехобработка, детали, заготовки">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:site_name" content="ТехМех. Токарная, фрезерная, слесарная и другие типы обработки" />
+  <meta property="og:title" content="ООО Технологии механической обработки"/>
+  <meta property="og:description" content="Токарная, фрезерная и другие виды механической обработики"/>
+  <meta property="og:image" content="https://machproc.ru/static/img/gallery/2.jpg"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content= "https://machproc.ru" />
   <!--[if (gte IE 9)|!(IE)]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-  <![endif]--> 
+  <![endif]-->
 
   <!-- Favicon -->
-  
+
   <link href="{% static 'img/favicon.ico' %}" rel="icon" type="image/x-icon">
 
   <!-- Styles -->
@@ -27,28 +36,26 @@
 
   <!-- Font Avesome Styles -->
   <link href="{% static 'css/font-awesome/font-awesome.css' %}" rel="stylesheet">
-	<!--[if IE 7]>
+  <!--[if IE 7]>
 		<link href="css/font-awesome/font-awesome-ie7.min.css" rel="stylesheet">
 	<![endif]-->
- 
+
 
 
 
   <!-- FlexSlider Style -->
   <link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css" media="screen">
 
-	<!-- Internet Explorer condition - HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
+  <!-- Internet Explorer condition - HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->   
+	<![endif]-->
 
 
 
-  <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-          />
-</head>       
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+</head>
+
 <body>
   <!-- Header -->
   <header id="header">
@@ -59,89 +66,93 @@
         <div class="col-1">
           <div class="logo" style="float: right;">
             <a href="/"><img src="{% static 'img/logo.jpg' %}" style="height: 50px; width: 50px;"></a>
-          </div>            
+          </div>
         </div>
 
         <div class="col-11">
           <div class="row space10"></div>
-             <nav id="nav" role="navigation">
-               	<a href="#nav" title="Show navigation">Show navigation</a>
-	            <a href="#" title="Hide navigation">Hide navigation</a>
-	            <ul class="clearfix">
-	           	<li class="{% if request.path == '/' %} active {% endif %}"><a href="/" title="">Главная</a></li>
-                <li class="{% if  request.path ==  '/about-us' %} active {% endif %}"><a href="/about-us" title="">О нас</a></li>                
-                <li class="{% if  request.path ==  '/gallery' %} active {% endif %}"><a href="/gallery" title="">Галерея</a></li>
-                <!--<li><a href="services.htm" title="">Services</a></li>
+          <nav id="nav" role="navigation">
+            <a href="#nav" title="Show navigation">Show navigation</a>
+            <a href="#" title="Hide navigation">Hide navigation</a>
+            <ul class="clearfix">
+              <li class="{% if request.path == '/' %} active {% endif %}"><a href="/" title="">Главная</a></li>
+              <li class="{% if  request.path ==  '/about-us' %} active {% endif %}"><a href="/about-us" title="">О
+                  нас</a></li>
+              <li class="{% if  request.path ==  '/gallery' %} active {% endif %}"><a href="/gallery"
+                  title="">Галерея</a></li>
+              <!--<li><a href="services.htm" title="">Services</a></li>
                 <li><a href="components.htm" title=""><span>Features</span></a>-->
-  			      <ul> <!-- Submenu -->
-                     <!-- <li><a href="components.htm" title="">Components</a></li>
+              <ul> <!-- Submenu -->
+                <!-- <li><a href="components.htm" title="">Components</a></li>
                       <li><a href="blog.htm" title="">Blog</a></li>
                       <li><a href="blog-detail.htm" title="">Blog Detail</a></li>
                       <li><a href="contact.htm" title="">Contact</a></li>-->
-  		         </ul> <!-- End Submenu -->      
-               </li>
-	           </ul>
-          </nav>
-         </div> 
-      </div> 
-       <div class="row space40"></div>
-          <div class="slider1 flexslider">  <!-- Slider -->
-            <ul class="slides">
-              <li>
-    	    	    <img src="/static/img/gallery/1.jpg" alt="">
-    	    		</li>
-    	    		<li>
-    	    	    <img src="/static/img/gallery/2.jpg" alt="">
-    	    		</li>
-    	    		<li>
-    	    	    <img src="/static/img/gallery/3.jpg" alt="">
-    	    		</li>
-                    <li>
-    	    	    <img src="/static/img/gallery/4.jpg" alt="">
-    	    		</li>
+              </ul> <!-- End Submenu -->
+              </li>
             </ul>
-          </div>  <!-- Slider End -->
-  </div> 
-</header>
-
-
-{% block content %}
-{% endblock %}
-
-
-
-
-<footer id="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-sm-12 col-md-12 col-lg-2">
-      
-      <div>         
-        <a href='https://yandex.ru/business/widget/request/company/68574089470'><button type="button" class="btn btn-secondary">Заявка</button></a>
+          </nav>
+        </div>
       </div>
-      </div>
+      <div class="row space40"></div>
+      <div class="slider1 flexslider"> <!-- Slider -->
+        <ul class="slides">
+          <li>
+            <img src="/static/img/gallery/1.jpg" alt="">
+          </li>
+          <li>
+            <img src="/static/img/gallery/2.jpg" alt="">
+          </li>
+          <li>
+            <img src="/static/img/gallery/3.jpg" alt="">
+          </li>
+          <li>
+            <img src="/static/img/gallery/4.jpg" alt="">
+          </li>
+        </ul>
+      </div> <!-- Slider End -->
+    </div>
+  </header>
 
 
-      <div class="col-12 col-sm-12 col-md-12 col-lg-7">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A827897c24ce76f2a4ef90b94484045aabbf047d6a401ac2b0093ae88a263569d&amp;width=100%25&amp;height=530&amp;lang=ru_RU&amp;scroll=true"></script>  
-      </div>
+  {% block content %}
+  {% endblock %}
 
 
 
 
-      
-      <div class="col-12 col-sm-12 col-md-12 col-lg-3">
-        <h3>Адрес производства:</h3>
-        Псков<br>
-        улица 128-й Стрелковой Дивизии, <br>
-        д. 36<br>
-        <br>
-        <i class="icon-phone"></i><a href="tel:+79113903182">+79113903182</a><br>
-        <i class="icon-envelope"></i><a href="mailto:info@machproc.ru">info@machproc.ru</a><br>
-        <i class="icon-home"></i><a href="http://machproc.ru">machproc.ru</a>
-        
-        <div class="row space40"></div>  
-<!--
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-2">
+
+          <div>
+            <a href='https://yandex.ru/business/widget/request/company/68574089470'><button type="button"
+                class="btn btn-secondary">Заявка</button></a>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+          <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A827897c24ce76f2a4ef90b94484045aabbf047d6a401ac2b0093ae88a263569d&amp;width=100%25&amp;height=530&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+
+
+
+
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+          <h3>Адрес производства:</h3>
+          Псков<br>
+          улица 128-й Стрелковой Дивизии, <br>
+          д. 36<br>
+          <br>
+          <i class="icon-phone"></i><a href="tel:+79113903182">+79113903182</a><br>
+          <i class="icon-envelope"></i><a href="mailto:info@machproc.ru">info@machproc.ru</a><br>
+          <i class="icon-home"></i><a href="http://machproc.ru">machproc.ru</a>
+
+          <div class="row space40"></div>
+          <!--
         <a href="#" class="social-network sn2 behance"></a>
         <a href="#" class="social-network sn2 facebook"></a>
         <a href="#" class="social-network sn2 pinterest"></a>
@@ -152,31 +163,32 @@
         <a href="#" class="social-network sn2 xing"></a>      
 
         -->
-        &copy; 2024. All rights reserved.
+          &copy; 2024. All rights reserved.
+        </div>
       </div>
+
+
+
     </div>
-    
-    
+  </footer>
+  <!-- Footer End -->
 
-  </div>
-</footer>
-<!-- Footer End -->
+  <!-- JavaScripts -->
 
-<!-- JavaScripts -->
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>  
-<script type="text/javascript" src="/static/js/functions.js"></script>
-<script type="text/javascript" defer src="/static/js/jquery.flexslider.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/static/js/functions.js"></script>
+  <script type="text/javascript" defer src="/static/js/jquery.flexslider.js"></script>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script>
-      Fancybox.bind('[data-fancybox="gallery"]', {
-        //
-      });    
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    Fancybox.bind('[data-fancybox="gallery"]', {
+      //
+    });    
+  </script>
 
 </body>
+
 </html>
