@@ -312,12 +312,14 @@ header {
 			}
 				#nav li a
 				{
-					color: #fff;
+					color: #002b4b;
 					display: block;
+          font-weight: bold;
+          font-size: xx-large;
 				}
 				#nav li a:active
 				{
-					background-color: #c00 !important;
+					background-color: rgb(11, 164, 175) !important;
 				}
 
 			#nav span:after
@@ -338,7 +340,7 @@ header {
 
 			#nav > ul
 			{
-				background-color: #e15a1f;
+				background-color: #1fbae1a8;
 			}
 				#nav > ul > li
 				{
@@ -355,12 +357,12 @@ header {
 					}
 						#nav > ul > li:not( :last-child ) > a
 						{
-							border-right: 1px solid #cc470d;
+							border-right: 1px solid rgb(13, 191, 204);
 						}
 						#nav > ul > li:hover > a,
 						#nav > ul:not( :hover ) > li.active > a
 						{
-							background-color: #cc470d;
+							background-color: rgb(13 191 204 / 85%);
 						}
 
 
@@ -368,7 +370,7 @@ header {
 
 				#nav li ul
 				{
-					background-color: #cc470d;
+					background-color: #fcfcff;
 					display: none;
 					position: absolute;
 					top: 100%;
@@ -516,7 +518,7 @@ header {
 }
 
 .ic-1 i {
-  color:#fb8865;
+  color:#1fbae1a8;
 }
    
 .title-1 {
@@ -629,7 +631,7 @@ header {
 }
 
 .list-b i {
-  color:#fb8865;
+  color:#1fbae1a8;
   padding-right:4px;
 }
 
@@ -663,7 +665,7 @@ header {
   color:#FFF;
   border:0px;
   padding:30px;
-  background:#fb8865;
+  background:#1fbae1a8;
 }
 
 .client-says:after {
@@ -1382,7 +1384,7 @@ table a:hover{
   top:-30px;
   right:-150px;
 }
-
+/*
 #footer .btn {
   background:#282828;
   text-shadow:none;
@@ -1390,8 +1392,7 @@ table a:hover{
   -webkit-box-shadow:rgba(255, 255, 255, 00) 0 0 0 inset, rgba(0, 0, 0, 00) 0 0 0;
   background-image:-webkit-linear-gradient(top, #282828, #282828);
   margin-top:10px;
-}
-
+}*/
 #footer .btn:hover {
   background:#3b3b3b;
 }
